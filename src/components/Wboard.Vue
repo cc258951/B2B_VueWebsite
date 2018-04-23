@@ -20,7 +20,7 @@
               <ul class="illustrate2 textCenter">
                 <li class="board active">
                   <template v-for="data in 5">
-                    <div :class="'bo' + data" @click="now(this)">
+                    <div :class="'bo' + data" @click="now(data)">
                       <img :src="'../../static/images/vic/static/product/productWboard/'+ data +'.png'">
                       <h1>{{data.$index}}</h1>
                     </div>
@@ -77,30 +77,35 @@
           }
         }
       },
-      now: function(a){
-        console.log(a);
-        var thisClassName = parseInt((this.className).substr(2));
-        var change  = 3 - thisClassName;
-        for(var i = 0; i<boardNode; i++){
-          var board = document.querySelectorAll('.board div')[i].className;
-          var boNum = parseInt(board.substr(2)) + change;
-//          console.log(boNum);
-          if( boNum == -1){
-            boNum = 4;
-          }
-          if ( boNum == 0 ){
-            boNum = 5;
-          }
-          if ( boNum == 6 ){
-            boNum = 1;
-          }
-          if ( boNum == 7 ){
-            boNum = 2;
-          }
-          $(".board div").eq(i).removeClass(board).addClass('bo'+ boNum);
-        }
+//      now: function(data){
+//        console.log(data);
+//        var index = data-1;
+//        var board = document.querySelectorAll('.board div')[index];
+//        board.className='active' + ' ' + 'bo' +data;
+//        console.log(board);
 
-      },
+//        var thisClassName = parseInt((this.className).substr(2));
+//        var change  = 3 - thisClassName;
+//        for(var i = 0; i<boardNode; i++){
+//          var board = document.querySelectorAll('.board div')[i].className;
+//          var boNum = parseInt(board.substr(2)) + change;
+//          console.log(boNum);
+//          if( boNum == -1){
+//            boNum = 4;
+//          }
+//          if ( boNum == 0 ){
+//            boNum = 5;
+//          }
+//          if ( boNum == 6 ){
+//            boNum = 1;
+//          }
+//          if ( boNum == 7 ){
+//            boNum = 2;
+//          }
+//          $(".board div").eq(i).removeClass(board).addClass('bo'+ boNum);
+//        }
+
+//      },
     }
   }
 </script>

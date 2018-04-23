@@ -14,6 +14,7 @@ import service from '@/components/service'
 import backSystem from '@/components/backSystem'
 import Wboard from '@/components/Wboard'
 import information from '@/components/information'
+import finance from '@/components/finance'
 
 Vue.use(Router)
 
@@ -89,6 +90,11 @@ export default new Router({
       path: '/information',
       name: 'information',
       component: information
+    },
+    {
+      path: '/finance',
+      name: 'finance',
+      component: finance
     },
   ]
 })

@@ -23,7 +23,7 @@
           </div>
         </div>
         <div :class="contentActive == true ?'info-content col-9' :'hidden'">
-          <ul class="col-12">
+          <ul class="col-12 active">
             <template v-for="(data,index) in $t('information.content')">
               <li @click="content(index)">
                 <div class="hidden">{{data.id}}</div>
@@ -40,7 +40,7 @@
             </template>
           </ul>
           <hr class="clear">
-          <div class="info-more btn-style-2 color-style-2">
+          <div class="info-more btn-style-2 color-style-2" @click="ul">
             {{$t('information.btn')}}
           </div>
         </div>
@@ -112,6 +112,9 @@
         this.contentBlock = index;
         contentIndex = !contentIndex;
         this.contentActive = contentIndex ;
+      },
+      ul(){
+
       }
     },
   }

@@ -47,6 +47,7 @@ export default {
     backSystem: 'Back office',
     Wboard: 'Cases',
     api: "API Integration",
+    finance:'Finance'
   },
   footer: {
     title: "Pharaoh Gaming",
@@ -193,13 +194,7 @@ export default {
         'http://videoracing.com/',
       ],
       btn:['Official Website','','Official Website']
-    },
-    {
-      title: 'Gold Options',
-      imgs:['1'],
-      url:'',
-      btn:['Official Website']
-    },
+    }
   ],
   productService: [
     {
