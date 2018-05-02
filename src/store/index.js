@@ -13,15 +13,15 @@ export default new Vuex.Store({
   },
   getters: {
     firstSignIn: state => state.firstSignIn,
-    currentLang: state => state.currentLang,
-    mappingCodes: state => state.mappingCodes,
-  },
-  mutations: {
-    changeLang(state, lang) {
-      state.currentLang = lang
-      localStorage.lang = lang
-    }
-  },
-  actions: {
+  currentLang: state => state.currentLang,
+  mappingCodes: state => state.mappingCodes,
+},
+mutations: {
+  changeLang(state, lang) {
+    state.currentLang = lang
+    localStorage.lang = lang
   }
+},
+actions: {
+}
 })

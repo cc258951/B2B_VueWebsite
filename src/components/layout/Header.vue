@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="col-4 titleLogo"><a><img src="../../../static/images/logoW.png" id="FaloLogo" class="svg FaloLogo"></a></div>
+    <div class="col-4 titleLogo"><router-link to="/"><img src="../../../static/images/logoW.png" id="FaloLogo" class="svg FaloLogo"></router-link></div>
     <div class="col-8 titleList">
       <template>
         <ul>
