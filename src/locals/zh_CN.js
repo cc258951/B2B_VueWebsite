@@ -32,6 +32,15 @@ export default {
     play: "播放",
     notplaying: "很抱歉！您的浏览器不支援HTML5 Video 影片播放",
   },
+  footer: {
+    title: "法老王娱乐",
+    desktop: "电脑版",
+    mobile: "手机版",
+    wechat: "微信",
+    email: "信箱",
+    QQ:'QQ帐号'
+  },
+
   contactPage: {
     title:'法老王娱乐十分珍视每位顾客的宝贵意见，为了让我们更有效的答复您的咨询，请尽可能详细填写以下信息，我们将尽快与您联系。',
     name:'姓名',
@@ -40,31 +49,6 @@ export default {
     SpecificMatters:'具体事项',
     Verification:'验证码',
     sendOut:'送出',
-    error:[
-      'The name field is required.',
-      'The skype field is required.',
-      'The qq field is required.',
-      'The wechat field is required.',
-      'The email field is required.',
-      'The message field is required.',
-      'The code field is required.',
-    ],
-  },
-  mainbar: {
-    website: '包网',
-    service: '服务特色',
-    backSystem: '后台系统',
-    Wboard: '网站版模',
-    api: '游戏API',
-    finance:'二元期權'
-  },
-  footer: {
-    title: "法老王娱乐",
-    desktop: "电脑版",
-    mobile: "手机版",
-    wechat: "微信",
-    email: "信箱",
-    QQ:'QQ帐号'
   },
   about: [
     {
@@ -137,6 +121,15 @@ export default {
       content: "法老王娱乐 (Pharaoh Gaming) 于2017年首次参展亚洲博彩业的年度盛会 - G2E Asia。 G2E Asia为亚洲博弈产业的首要展会，聚集来自亚洲各地及欧美各国的顶尖博弈相关产业，展出最新的产品资讯及产业趋势。法老王娱乐首次参与展出便惊艳全场，不但让现场观众体验到法老王娱乐自有博弈产品之游戏介面精致度与系统稳定性，更成功打响了国际知名度，在所有与会人员中留下了深刻的印象！<br />法老王娱乐所坚持的就是带给博彩玩家们最好的游戏体验，为此我们致力于开发并且精进各种受到玩家们欢迎的游戏。此次G2E Asia，我们展出有法老王娱乐自行开发的老虎机、真人娱乐、德州扑克、彩票游戏、体育博彩及黄金期权，每一项都有着精心设计的版面与巧思，希望让玩家享受至高无上的乐趣。<br />除了自有游戏产品之外，法老王娱乐同时也致力于开发各式的客制化线上娱乐平台且备有方案详尽的包网服务，并提供营运相关的额外服务，如：第三方支付、身分验证、装置识别...等，更研发了系统人性化的线上客服系统，让更多的营运商享受到最齐全且完善的服务，携手共创双赢！"
     },
   ],
+  /*produce*/
+  mainbar: {
+    website: '包网',
+    service: '服务特色',
+    backSystem: '后台系统',
+    Wboard: '网站版模',
+    api: '游戏API',
+    finance:'二元期權'
+  },
   productApi: [
     {
       title: '老虎机',
@@ -205,19 +198,19 @@ export default {
         content:'游戏丰富、玩家接受度高'
       },
       {
-        title:'打造专属的娱乐平台',
+        title:'专属娱乐平台',
         content:'提供各式模版及客制化平台'
       },
       {
-        title:'后台功能齐全操作简单',
+        title:'后台功能齐全',
         content:'简便的后台操作系统即时的获利报表'
       },
       {
-        title:'安全防护资料保密',
+        title:'安全防护保密',
         content:'流量维护、防止黑客盗入及登入装置的识别系统'
       },
       {
-        title:'其他服务',
+        title:'其他相關服务',
         content:'第三方支付、简讯验证及身分验证服务'
       },
     ],
@@ -284,6 +277,7 @@ export default {
       '全时段线上支持',
     ]
   },
+  /*produce End*/
   information:{
     title:[
       '市场分析',   //id:0
@@ -292,8 +286,8 @@ export default {
       '亚洲动态',   //id:3
       '法令规章',   //id:4
     ],
-    content:{
-      '1':[
+    content:[
+
         {
           id:2,
           date:'2018/4/30',
@@ -451,9 +445,7 @@ export default {
           '王思聪初出江湖，王健林给了他5个“小目标”的本钱。\n' +
           '\n' +
           '拿着5个亿，王思聪开始改变中国电竞。电竞之于他，一方面是爱好，酷爱玩DOTA的他，喜欢与诸多职业选手共同征战的乐趣；一方面只是投资版图的一部分，甚至可能并不是最重要的那一部分。',
-        }
-      ],
-      '2':[
+        },
         {
           id:2,
           date:'2018/4/30',
@@ -697,8 +689,6 @@ export default {
           '\n' +
           '苏国京认为，出台专门的彩票法，不光可以规范正规的彩票行业，同时也应该通过列举各类黑彩形式，明确各部门在黑彩监管打击等方面的具体职责，并加大对违法开设黑彩的惩处力度等方面来强化对黑彩的打击力度，遏制住黑彩泛滥的势头。',
         },
-      ],
-      '3':[
         {
           id:3,
           date:'2018/4/30 ',
@@ -771,9 +761,7 @@ export default {
           '\n' +
           '内华达大学拉斯韦加斯博彩研究中心主任施瓦兹（David Schwartz）指出，体育博彩带来的税收，仅占内华达州整体博彩税收约2％，因此就算让体育博彩合法化，也不会为州政府带来充足的税收来应付其财政支出。',
         },
-
-      ]
-    },
+    ],
     newsTitle:'最新博彩资讯',
     btn:'点击看更多博彩资讯'
   },

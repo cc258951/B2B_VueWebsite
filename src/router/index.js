@@ -5,7 +5,6 @@ import News from '@/components/News'
 import NewsDetail from '@/components/NewsDetail'
 import About from '@/components/About'
 import Product from '@/components/Product'
-import Partner from '@/components/Partner'
 import Contact from '@/components/Contact'
 import Website from '@/components/Website'
 import Api from '@/components/Api'
@@ -45,11 +44,6 @@ export default new Router({
       path: '/product',
       name: 'product',
       component: Product
-    },
-    {
-      path: '/partner',
-      name: 'partner',
-      component: Partner
     },
     {
       path: '/contact',

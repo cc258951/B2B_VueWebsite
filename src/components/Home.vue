@@ -92,7 +92,7 @@ export default {
   data() {
     return {
       slideActiveIndex: 0,
-      slideImgs:[1,2,3,4,5],
+      slideImgs:[1,2],
       _time: 0
     }
   },

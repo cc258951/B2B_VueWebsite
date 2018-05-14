@@ -10,7 +10,7 @@
               <h1 class="close"><router-link to="/website">&times;</router-link></h1>
               <hr class="clear">
               <div class="finance_content">
-                <div><img src="../../static/images/vic/static/finance/finance.png"></div>
+                <div><img src="../../static/images/vic/static/product/finance/finance.png"></div>
                 <div><h2>{{$t('finance.title')}}</h2></div>
                 <div class="finance_function">
                   <div class="left_top"></div>
@@ -30,7 +30,7 @@
                 <div class="finance_detail">
                   <template v-for="(data,index) in 7">
                     <div>
-                      <img :src="'../../static/images/vic/static/finance/f'+ data +'.png'">
+                      <img :src="'../../static/images/vic/static/product/finance/f'+ data +'.png'">
                       <h5>{{$t('finance.detailTitle['+ index + ']')}}</h5>
                       <h6>{{$t('finance.detail['+ index + ']')}}</h6>
                     </div>

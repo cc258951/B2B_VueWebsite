@@ -33,9 +33,10 @@
                       @mouseout="mouseOut(index)"
                   >
                     <div>
-                      <img :src = "'../../static/images/vic/static/API/'+ id + '-' + $t('productApi.'+ parseInt(id-1) +'.imgs['+index+']' ) + '.png'">
+                      <img :src = "'../../static/images/vic/static/product/API/'+ id + '-' + $t('productApi.'+ parseInt(id-1) +'.imgs['+index+']' ) + '.png'">
                       <br>
-                      <router-link tag="button" class="btn-style-1 color-style-1" :to="($t('productApi.'+ parseInt(id-1) +'.url[' + index + ']'))">{{$t('productApi.' + parseInt(id-1) + '.btn[' + index + ']')}}</router-link>
+                      <!--<router-link tag="button" class="btn-style-1 color-style-1" :to="($t('productApi.'+ parseInt(id-1) +'.url[' + index + ']'))">{{$t('productApi.' + parseInt(id-1) + '.btn[' + index + ']')}}</router-link>-->
+                      <a class="btn-style-1 color-style-1" :href="$t('productApi.'+ parseInt(id-1) +'.url[' + index + ']')" target="_blank">{{$t('productApi.' + parseInt(id-1) + '.btn[' + index + ']')}}</a>
                     </div>
                   </li>
                 </ul>
@@ -80,11 +81,11 @@
       },
       mouseOver(index) {
         var imgOver = document.querySelectorAll('.vender li img')[index];
-        imgOver.src = '../../static/images/vic/static/API/'+ id + '-' + parseInt(index+1) + 'a.png';
+        imgOver.src = '../../static/images/vic/static/product/API/'+ id + '-' + parseInt(index+1) + 'a.png';
       },
       mouseOut(index) {
         var imgOver = document.querySelectorAll('.vender li img')[index];
-        imgOver.src = '../../static/images/vic/static/API/'+ id + '-' + parseInt(index+1) + '.png';
+        imgOver.src = '../../static/images/vic/static/product/API/'+ id + '-' + parseInt(index+1) + '.png';
       }
     },
     mixins: [commonMixin],

@@ -235,9 +235,9 @@ input:-moz-placeholder {
 .btn-style-1{
   border: none;
   border-radius: 20px;
-  padding: 0 12%;
+  padding: 9px 12% 3px 12%;
   margin: 10px 0;
-  height:30px;
+  height: 30px;
 }
 .btn-style-2{
   padding: 5px 10%;

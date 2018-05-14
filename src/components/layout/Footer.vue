@@ -1,5 +1,5 @@
 <template>
-<footer class="footer">
+  <footer class="footer">
     <div class="container textCenter">
       <div class="col-4 footer_left">
         <p class="footerTitle">PHARAOH GAMING</p>
@@ -20,13 +20,13 @@
           <li>{{$t('footer.wechat')}}<br>pharaoh-gaming</li>
           <li>{{$t('footer.email')}}<br>pharaoh888gaming@gmail.com</li>
           <li>Skype<br>pharaoh888gaming</li>
-          <li>{{$t('footer.QQ')}}<br>3304887544</li>
         </ul>
       </div>
       <div class="col-12 copyright">
         Copyright © 2014 Pharaoh Gaming All rights reserved
       </div>
     </div>
+    <div class="toTop" @click="toTop"><img src="/static/images/vic/index/iconFooter.png"></div>
   </footer>
 </template>
 
@@ -35,5 +35,12 @@ import commonMixin from '@/utils/commonMixin'
 export default {
   name: "Footer",
   mixins: [commonMixin],
+  methods: {
+    toTop(){
+//      document.body.scrollTop = document.documentElement.scrollTop = 0;
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    }
+  }
 }
 </script>

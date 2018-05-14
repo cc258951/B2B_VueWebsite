@@ -34,9 +34,11 @@
                        @mouseout="mouseOut(index)"
                    >
                      <div>
-                       <img :src = " '../../static/images/vic/static/API/1-' + $t('productApi.'+ 0 + '.imgs['+ index + ']' ) + '.png'" >
+                       <img :src = " '../../static/images/vic/static/product/API/1-' + $t('productApi.'+ 0 + '.imgs['+ index + ']' ) + '.png'" >
                        <br>
-                       <router-link tag="button" class="btn-style-1 color-style-1" :to="($t('productApi.0.url[' + index + ']'))">{{$t('productApi.0.btn[' + index + ']')}}</router-link>
+                       <!--<router-link tag="button" class="btn-style-1 color-style-1" :to="($t('productApi.0.url[' + index + ']'))">-->
+                         <a class="btn-style-1 color-style-1" :href="$t('productApi.0.url[' + index + ']')" target="_blank">{{$t('productApi.0.btn[' + index + ']')}}</a>
+                       <!--</router-link>-->
                      </div>
                    </li>
                  </ul>
@@ -75,11 +77,11 @@ import mappingCodes from '../locals'
       },
       mouseOver(index) {
         var imgOver = document.querySelectorAll('.vender li img')[index];
-        imgOver.src = '../../static/images/vic/static/API/1-'+parseInt(index+1)+'a.png';
+        imgOver.src = '../../static/images/vic/static/product/API/1-'+parseInt(index+1)+'a.png';
       },
       mouseOut(index) {
         var imgOver = document.querySelectorAll('.vender li img')[index];
-        imgOver.src = '../../static/images/vic/static/API/1-'+parseInt(index+1)+'.png';
+        imgOver.src = '../../static/images/vic/static/product/API/1-'+parseInt(index+1)+'.png';
       }
     },
   }
